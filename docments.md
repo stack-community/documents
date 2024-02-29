@@ -1,69 +1,69 @@
-# Stackプログラミング言語ドキュメント
+# Stack programming language documentation
 
-Stackプログラミング言語は、スタックベースのプログラミング言語であり、独自の特徴と構文を持っています。
-この言語は、簡潔さと柔軟性を兼ね備えており、様々なプログラミングタスクに対応できるよう設計されています。
+Stack programming language is a stack-based programming language and has its own characteristics and syntax.
+This language combines simplicity and flexibility and is designed to handle a variety of programming tasks.
 
-- スタックベース: プログラムの実行中に使用されるすべてのデータはスタックに格納され、スタック上で操作されます。
-- メタプログラミング: 文字列としてプログラムを表現し、実行時に動的に生成することができます。
-- 柔軟性: コマンドやデータ型の組み合わせにより、様々な処理を簡潔に表現できます。
+- Stack-based: All data used during program execution is stored and manipulated on the stack.
+- Metaprogramming: Programs can be expressed as strings and dynamically generated at runtime.
+- Flexibility: Various processes can be expressed concisely by combining commands and data types.
 
-本ドキュメントでは、Stackプログラミング言語の基本的な概念から、高度な機能やメタプログラミングのテクニックまで幅広くカバーします。
-初心者から上級者まで、幅広いユーザーが効果的にStack言語を学習し、活用するためのガイドとなることを目指しています。
+This document covers a wide range of Stack programming language concepts, from basic concepts to advanced features and metaprogramming techniques.
+We aim to be a guide for a wide range of users, from beginners to advanced users, to effectively learn and utilize the Stack language.
 
-## Stackは誰のためのものなの
-Stackプログラミング言語は、広範なプログラミング需要に対応するために設計されていますが、特に以下のような人々にとって有用です：
+## Who is Stack for?
+The Stack programming language is designed to address a wide range of programming needs, but is particularly useful for people who:
 
-### 学習者
-プログラミングの基礎を学ぶための新しい言語としてStackを選択することは、スタックベースのアプローチやメタプログラミングの概念を理解するのに役立ちます。
-言語のシンプルな構文と柔軟性は、初心者がプログラミングの基本を理解しやすくします。
+### Learner
+Choosing Stack as a new language to learn programming basics will help you understand stack-based approaches and metaprogramming concepts.
+The language's simple syntax and flexibility make it easy for beginners to understand the basics of programming.
 
-### プログラマー
+### Programmer
   
-Stackは柔軟性が高く、コードを簡潔に表現できるため、既存のプロジェクトでの効率的な開発に役立ちます。
-また、メタプログラミング機能を利用して動的なプログラム生成や自動化を行うことができます。
+Stack is flexible and provides a concise representation of code, making it useful for efficient development in existing projects.
+In addition, you can use metaprogramming functions to perform dynamic program generation and automation.
 
-### データサイエンティスト
+### Data Scientist
 
-データ処理や解析のためのスクリプトを迅速に作成する必要がある場合、Stackはそのようなタスクに対して効果的なツールとなります。
-データをスタックに積んで処理することで、データ変換や集計などの処理が容易になります。
+If you need to quickly create scripts for data processing and analysis, Stack is an effective tool for such tasks.
+By stacking data and processing it, processing such as data conversion and aggregation becomes easier.
 
-### 教育者
+### educator
 
-Stackプログラミング言語は、プログラミングの基礎を教えるための教材や演習問題として活用できます。
-スタックの概念やメタプログラミングの原理を理解することで、学生がより深いプログラミングの理解を得るのに役立ちます。
+The Stack programming language can be used as teaching materials and exercises to teach the basics of programming.
+Understanding stack concepts and metaprogramming principles will help students gain a deeper understanding of programming.
 
- ### 研究者
+  ### researcher
 
-新しいアルゴリズムやデータ構造を試すためのプロトタイプ開発や実験において、Stackは柔軟性と速度の面で有用です。
-短いスクリプトや実験コードを素早く作成し、テストすることができます。
+Stack provides flexibility and speed for prototyping and experimenting with new algorithms and data structures.
+Quickly create and test short scripts and experimental code.
 
-Stackプログラミング言語は、そのシンプルな構文と柔軟性によって、様々なプログラミング需要に応えるためのツールとして広く利用されることが期待されています。
+Due to its simple syntax and flexibility, the Stack programming language is expected to be widely used as a tool to meet various programming needs.
 
-## インストール
-Stackプログラミング言語を使用するにはローカル環境に処理系をインストールする必要があります。
-以下のURLから処理系をインストールできます。好きなところに保存してください。
+## install
+To use the Stack programming language, you need to install a processing system in your local environment.
+You can install the processing system from the URL below. Save it wherever you like.
 
 - https://github.com/Stack-Programing-Community/Stack-Programing-Language/releases
 
-## "Hello, World"プログラム
-インストール出来たら、Stackプログラミング言語での伝統的な "Hello, World" プログラムを作ってみましょう。
-テキストエディタを開き、新しいファイルを作成します。次のコードをファイルに入力します。
+## "Hello, World" program
+Once installed, let's create a traditional "Hello, World" program in the Stack programming language.
+Open a text editor and create a new file. Enter the following code into the file.
 
-```
+````
 (Hello, World!)
 print
-```
-ファイルを適切な名前で保存します。たとえば、`hello_world.stk`という名前を使用します。
-Stackプログラミング言語のソースコードファイルの拡張子は `.stk` です。
+````
+Save the file with an appropriate name. For example, use the name `hello_world.stk`.
+The Stack programming language source code file extension is `.stk`.
 
-### 3. プログラムの実行
+### 3. Execute the program
 
-ターミナルやコマンドプロンプトを開き、保存したプログラムのあるディレクトリに移動します。次に、以下のコマンドを入力してプログラムを実行します。
+Open a terminal or command prompt and change to the directory where you saved the program. Then run the program by typing the command below.
 
-```
+````
 stack hello_world.stk
-```
-これにより、"Hello, World!"というメッセージが出力されます。
+````
+This will output the message "Hello, World!".
 
-"Hello, World" プログラムの作成と実行が出来ました。これで正真正銘のStackプログラマーの仲間入りです。
-Stackプログラミング言語コミュニティへようこそ！
+You have successfully created and executed the "Hello, World" program. Now you can join the ranks of genuine Stack programmers.
+Welcome to the Stack programming language community!
