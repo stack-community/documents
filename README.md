@@ -1,2 +1,2 @@
 # Documents
-Stackプログラミング言語の公式ドキュメント
+Official documentation for the Stack programming language
