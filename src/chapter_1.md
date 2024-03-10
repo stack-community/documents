@@ -2,12 +2,23 @@
 
 Let's programing first project, output "Hello, world!" message.
 
-please make `hello.stk` script file, and write it below program.
+Make `hello.stk` script file, and write it below program.
 
 ```stack
 (Hello, world!) print
 ```
 
-enter below command at your shell.
+Enter below command at your shell.
+
+```bash
+$ stack hello.stk
 ```
-stack hello.stk
+
+Then, output "Hello, world!" message at your shell.
+
+```
+Hello, world!
+```
+
+Great! 
+you become stack programmer right now, welcome to stack programming community! 
