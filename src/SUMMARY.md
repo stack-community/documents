@@ -1,3 +1,5 @@
 # Summary
 
-- [Chapter 1](./chapter_1.md)
+- [Introduction](./chapter_1.md)
+- [Getting Started](./chapter_2.md)
+- [First programming](./chapter_3.md)
