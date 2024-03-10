@@ -1,24 +1,45 @@
-# Chapter 1
+# Introduction
 
-Let's programing first project, output "Hello, world!" message.
+Stack programming language is powerful script language designed stack oriented type.
+that's advantages are describe below.
 
-Make `hello.stk` script file, and write it below program.
+1. Efficient stack-oriented execution model
+2. Clear, easy-to-understand and elegant syntax
+3. Rich of convenient and highly extensible commands
+4. Dynamic and flexible data types system
 
-```stack
-(Hello, world!) print
-```
+Stack is Mainly used for scripting.
 
-Enter below command at your shell.
 
-```bash
-$ stack hello.stk
-```
+## Who is Stack for?
+The Stack programming language is designed to address a wide range of programming needs, but is particularly useful for people who:
 
-Then, output "Hello, world!" message at your shell.
+### Learner
+Choosing Stack as a new language to learn programming basics will help you understand stack-based approaches and metaprogramming concepts.
+The language's simple syntax and flexibility make it easy for beginners to understand the basics of programming.
 
-```
-Hello, world!
-```
+### Programmer
+  
+Stack is flexible and provides a concise representation of code, making it useful for efficient development in existing projects.
+In addition, you can use metaprogramming functions to perform dynamic program generation and automation.
 
-Great! 
-you become stack programmer right now, welcome to stack programming community! 
+### Data Scientist
+
+If you need to quickly create scripts for data processing and analysis, Stack is an effective tool for such tasks.
+By stacking data and processing it, processing such as data conversion and aggregation becomes easier.
+
+### Educator
+
+Stack can be used as teaching materials and exercises to teach the basics of programming.
+Understanding stack concepts and metaprogramming principles will help students gain a deeper understanding of programming.
+
+### Researcher
+
+Stack provides flexibility and speed for prototyping and experimenting with new algorithms and data structures.
+Quickly create and test short scripts and experimental code.
+
+Due to its simple syntax and flexibility, the Stack is expected to be widely used as a tool to meet various programming needs.
+
+---
+
+Like this, using stack is ideals way to many use case.
