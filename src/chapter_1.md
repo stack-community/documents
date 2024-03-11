@@ -8,9 +8,6 @@ that's advantages are describe below.
 3. Rich of convenient and highly extensible commands
 4. Dynamic and flexible data types system
 
-Stack is Mainly used for scripting.
-
-
 ## Who is Stack for?
 The Stack programming language is designed to address a wide range of programming needs, but is particularly useful for people who:
 
