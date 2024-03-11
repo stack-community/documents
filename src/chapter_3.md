@@ -9,19 +9,23 @@ Stack Programming Language
 > 
 ```
 
-And, enter below program at Stack REPL, push enter key twice.
+Then, enter below program at Stack REPL, push enter key twice.
 
 ```stack
 (Hello, world!) print
 ```
 
-Then, output inside stack view and "Hello, world!" message at Stack REPL.
+> String notations are use parentheses `( )` 
+
+Then, displayed inside stack view and outputed "Hello, world!" message at Stack REPL.
 
 ```stack
 Stack〔  〕 ←  (Hello, world!)
 Stack〔 (Hello, world!) 〕 ←  print
 [Output]: Hello, world!
 ```
+
+> `print` is one of Stack's command, output string.
 
 Great! 
 you became stack programmer now, welcome to stack programming community! 
