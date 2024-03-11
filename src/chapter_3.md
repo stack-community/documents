@@ -1,23 +1,26 @@
 # First programming
 
 Let's programing first project, output "Hello, world!" message.
-
-Make `hello.stk` script file, and write it below program.
-
-```stack
-(Hello, world!) print
-```
-
-Enter below command at your shell.
+Enter `stack` command at your shell to start a Stack REPL.
 
 ```bash
-$ stack hello.stk
+$ stack
+Stack Programming Language
+> 
 ```
 
-Then, output "Hello, world!" message at your shell.
+And, enter below program at Stack REPL, push enter key twice.
 
+```stack
+> (Hello, world!) print
 ```
-Hello, world!
+
+Then, output inside stack view and "Hello, world!" message at Stack REPL.
+
+```stack
+Stack〔  〕 ←  (Hello, world!)
+Stack〔 (Hello, world!) 〕 ←  print
+[Output]: Hello, world!
 ```
 
 Great! 
