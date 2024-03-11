@@ -12,7 +12,7 @@ Stack Programming Language
 And, enter below program at Stack REPL, push enter key twice.
 
 ```stack
-> (Hello, world!) print
+(Hello, world!) print
 ```
 
 Then, output inside stack view and "Hello, world!" message at Stack REPL.
@@ -24,4 +24,4 @@ Stack〔 (Hello, world!) 〕 ←  print
 ```
 
 Great! 
-you become stack programmer right now, welcome to stack programming community! 
+you became stack programmer now, welcome to stack programming community! 
