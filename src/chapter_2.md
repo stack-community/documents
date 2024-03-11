@@ -1,6 +1,6 @@
 # Getting Started
 
-Enter below command to install Stack programming language's interpreter.
+Enter below command at your shell to install Stack programming language's interpreter.
 
 ```
 $ git clone https://github.com/Stack-Programing-Community/Stack-Programing-Language.git
@@ -8,6 +8,8 @@ $ cd Stack-Programing-Language
 $ cargo build --release
 $ cargo install --path .
 ```
+
+> Must have command `git` and `cargo` at your computer.
 
 And, enter below command to check correct install.
 
@@ -21,3 +23,5 @@ If display at your shell like below, install is correct!
 Stack Programming Language
 > 
 ```
+
+In next chapter, we start programming in the Stack 
