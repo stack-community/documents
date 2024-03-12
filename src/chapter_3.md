@@ -25,7 +25,7 @@ Stack〔 (Hello, world!) 〕 ←  print
 [Output]: Hello, world!
 ```
 
-> The `print` is one of Stack's command, it output string.
+> The `print` is one of Stack's command, it can output string.
 
 Great! 
 you became stack programmer now, welcome to stack programming community! 
