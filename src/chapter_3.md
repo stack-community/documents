@@ -17,7 +17,7 @@ Then, enter below program at Stack REPL, push enter key twice.
 
 > String notations are use parentheses `( )` 
 
-Then, displayed inside stack view and outputed "Hello, world!" message at Stack REPL.
+Then, displayed inside stack view and outputted "Hello, world!" message at Stack REPL.
 
 ```stack
 Stack〔  〕 ←  (Hello, world!)
@@ -28,4 +28,4 @@ Stack〔 (Hello, world!) 〕 ←  print
 > The `print` is one of Stack's command, it can output string.
 
 Great! 
-you became stack programmer now, welcome to stack programming community! 
+You became stack programmer now, welcome to stack programming community! 
