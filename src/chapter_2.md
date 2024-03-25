@@ -1,5 +1,6 @@
 # Getting Started
 
+You need to install the interpreter to run script of the Stack in your computer. 
 Enter below command at your shell to install Stack programming language's interpreter.
 
 ```
@@ -11,7 +12,7 @@ $ cargo install --path .
 
 > Must have command `git` and `cargo` at your computer.
 
-And, enter below command to check correct install.
+And, enter below command to check correct installation.
 
 ```
 $ stack
