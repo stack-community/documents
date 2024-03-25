@@ -1,7 +1,7 @@
 # Calculate
 
 Let's calculate mathematical formula by Stack.
-Enter below program to simple calculate at Stack REPL.
+Enter below program to simply calculate at Stack REPL.
 
 ```stack
 1 2 add
@@ -16,7 +16,9 @@ Stack〔 1 | 2 〕 ←  add
 Stack〔 3 〕
 ```
 
-Great! you can calcuate by Stack.
+Great! You can calculate by Stack.
+
+> `add` is the command of addition the number.
 
 2nd, more difficult formula. 
 Stack REPL can input multi-lines program.
@@ -26,7 +28,7 @@ Stack REPL can input multi-lines program.
 4 mul 3 div round
 ```
 
-correct processing difficult formula!
+Correct to processing difficult formula!
 ```
 Stack〔  〕 ←  2
 Stack〔 2 〕 ←  3
@@ -42,5 +44,13 @@ Stack〔 16 | 3 〕 ←  div
 Stack〔 5.333333333333333 〕 ←  round
 Stack〔 5 〕
 ```
+
+> `sub` is the command of subtraction the number.
+
+> `mul` is the command of multiplication the number.
+
+> `div` is the command of division the number.
+
+> `round` is the command of rounding off the number.
 
 Stack is good at processing mathematical formula too.
