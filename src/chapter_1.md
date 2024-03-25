@@ -35,8 +35,6 @@ Understanding stack concepts and metaprogramming principles will help students g
 Stack provides flexibility and speed for prototyping and experimenting with new algorithms and data structures.
 Quickly create and test short scripts and experimental code.
 
-Due to its simple syntax and flexibility, the Stack is expected to be widely used as a tool to meet various programming needs.
-
 ---
 
-Like this, using stack is ideals way to many use case.
+Due to its simple syntax and flexibility, the Stack is expected to be widely used as a tool to meet various programming needs.
