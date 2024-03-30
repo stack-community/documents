@@ -5,3 +5,4 @@
 - [First programming](./chapter_3.md)
 - [Calculate](./chapter_4.md)
 - [Variable](./chapter_5.md)
+- [Conditional branch](./chapter_6.md)
