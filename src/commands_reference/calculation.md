@@ -1,6 +1,6 @@
 # Calculation
 
-There are commands of mathematic calclation.
+There are commands of mathematics calculation.
 
 |overview|explain|
 |-|-|
