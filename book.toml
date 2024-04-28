@@ -1,5 +1,10 @@
 [book]
+title = "Documents of Stack Programming Language"
 authors = ["梶塚太智"]
 language = "en"
 multilingual = false
 src = "src"
+
+[build]
+build-dir = "docs"
+create-missing = false
