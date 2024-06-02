@@ -6,7 +6,7 @@
     - [Installation](./getting_started/installation.md)
     - [Hello, World!](./getting_started/hello_world.md)
     - [Solve Fizz Buzz](./getting_started/fizz_buzz.md)
-    - [CLI Application](./getting_started/cli_application.md)
+    - [CLI Tools](./getting_started/cli_tools.md)
     - [Build Web Server](./getting_started/build_web_server.md)
 - [Grammar](./grammar.md)
     - [String Notation](./grammar/string_notation.md)
