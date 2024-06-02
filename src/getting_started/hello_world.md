@@ -1,7 +1,7 @@
 # Hello, World!
 
 To write program that display string "Hello, world!" is traditional learning way first time touch new language.
-Let's write Hello, world! program in the Stack!.
+Let's write the program in the Stack!
 
 enter command `stack` on the your shell to start up the REPL of Stack.
 If REPL is started, enter below code on the REPL and push enter-key twice.

@@ -10,5 +10,5 @@ Stack has variety [distributions](./distributions_list.md) for support many use-
 Because if it doesn't split function each distributions, the binary will become very heavy.
 So, There are a lot of Satck distributions.
 
-Reading this documents is ideals way to learn Stack. 
+Reading this documents is ideal way to learn Stack. 
 Let's jump into the engaging Stack world!
