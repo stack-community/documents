@@ -22,7 +22,8 @@ Stack: `3 4 add`
 ```stack-repl
 Stack〔  〕 ←  3
 Stack〔 3 〕 ←  4
-Stack〔 3 | 4 〕 
+Stack〔 3 | 4 〕 ←  add
+Stack〔 7 〕
 ```
 ### Subtraction
 
