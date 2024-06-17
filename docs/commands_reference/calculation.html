@@ -176,14 +176,17 @@
                         <h1 id="calculation"><a class="header" href="#calculation">Calculation</a></h1>
 <p>Stack's expression is Reverse Polish Notation (RPN). That's result of stack oriented approach.</p>
 <p>RPN is a mathematical notation wherein every operator follows all of its operands. It is also known as postfix notation. In contrast to the more common infix notation, where operators are placed between operands (e.g., <code>3 + 4</code>), RPN eliminates the need for parentheses to define operation order.</p>
-<h3 id="advantages-of-rpn"><a class="header" href="#advantages-of-rpn">Advantages of RPN</a></h3>
+<h2 id="advantages-of-rpn"><a class="header" href="#advantages-of-rpn">Advantages of RPN</a></h2>
 <ul>
 <li><strong>No Need for Parentheses</strong>: RPN eliminates the need for parentheses that are required in Usual notation to dictate the order of operations.</li>
 <li><strong>Efficient for Computers</strong>: RPN is easier to implement on computers as it suits stack-based calculations.</li>
 <li><strong>Reduces Errors</strong>: Human errors related to misplacing parentheses are reduced.</li>
 </ul>
-<h3 id="addition"><a class="header" href="#addition">Addition</a></h3>
+<h2 id="addition"><a class="header" href="#addition">Addition</a></h2>
 <p>In Stack, to add two numbers, you would write the operands first, followed by the operator.</p>
+<blockquote>
+<p>the "Usual" is based on Python's syntax</p>
+</blockquote>
 <p><strong>Example</strong>:<br />
 Usual: <code>3 + 4</code><br />
 Stack: <code>3 4 add</code></p>
@@ -193,7 +196,7 @@ Stack〔 3 〕 ←  4
 Stack〔 3 | 4 〕 ←  add
 Stack〔 7 〕
 </code></pre>
-<h3 id="subtraction"><a class="header" href="#subtraction">Subtraction</a></h3>
+<h2 id="subtraction"><a class="header" href="#subtraction">Subtraction</a></h2>
 <p>For subtraction, the Stack format follows the same pattern: operands first, then the operator.</p>
 <p><strong>Example</strong>:<br />
 Usual: <code>7 - 2</code><br />
@@ -204,7 +207,7 @@ Stack〔 7 〕 ←  2
 Stack〔 7 | 2 〕 ←  sub
 Stack〔 5 〕
 </code></pre>
-<h3 id="multiplication"><a class="header" href="#multiplication">Multiplication</a></h3>
+<h2 id="multiplication"><a class="header" href="#multiplication">Multiplication</a></h2>
 <p>Multiplication in Stack is handled similarly.</p>
 <p><strong>Example</strong>:<br />
 Usual: <code>5 * 6</code><br />
@@ -215,7 +218,7 @@ Stack〔 5 〕 ←  6
 Stack〔 5 | 6 〕 ←  mul
 Stack〔 30 〕
 </code></pre>
-<h3 id="division"><a class="header" href="#division">Division</a></h3>
+<h2 id="division"><a class="header" href="#division">Division</a></h2>
 <p>Division follows the same postfix notation rules.</p>
 <p><strong>Example</strong>:<br />
 Usual: <code>8 / 4</code><br />
@@ -226,12 +229,35 @@ Stack〔 8 〕 ←  4
 Stack〔 8 | 4 〕 ←  div
 Stack〔 2 〕
 </code></pre>
+<h2 id="rounding-off"><a class="header" href="#rounding-off">Rounding off</a></h2>
+<p>Disision isn't always divisible, It need rounding off.
+<strong>Example</strong>:<br />
+Usual: <code>round(22 / 7)</code><br />
+Stack: <code>22 7 div round</code></p>
+<p><strong>Result</strong>:</p>
+<pre><code class="language-stack-repl">Stack〔  〕 ←  22
+Stack〔 22 〕 ←  7
+Stack〔 22 | 7 〕 ←  div
+Stack〔 3.142857142857143 〕 ←  round
+Stack〔 3 〕
+</code></pre>
+<h2 id="power"><a class="header" href="#power">Power</a></h2>
+<p>Sometimes, we have to powering number. If so case, we can use <code>pow</code> command.</p>
+<p><strong>Example</strong>:<br />
+Usual: <code>2 ** 10</code><br />
+Stack: <code>2 10 pow</code></p>
+<p><strong>Result</strong>:</p>
+<pre><code class="language-stack-repl">Stack〔  〕 ←  2
+Stack〔 2 〕 ←  10
+Stack〔 2 | 10 〕 ←  pow
+Stack〔 1024 〕
+</code></pre>
 <h2 id="combining-operations"><a class="header" href="#combining-operations">Combining Operations</a></h2>
 <p>Stack can also handle more complex expressions by maintaining the order of operations through its postfix structure.</p>
-<p><strong>Example</strong>:<br />
+<p><strong>Example 1</strong>:<br />
 Usual: <code>(3 + 4) * 2</code><br />
 Stack: <code>3 4 add 2 mul</code></p>
-<p><strong>Result</strong>:</p>
+<p><strong>Result 1</strong>:</p>
 <pre><code class="language-stack-repl">Stack〔  〕 ←  3
 Stack〔 3 〕 ←  4
 Stack〔 3 | 4 〕 ←  add
@@ -239,10 +265,10 @@ Stack〔 7 〕 ←  2
 Stack〔 7 | 2 〕 ←  mul
 Stack〔 14 〕
 </code></pre>
-<p><strong>Example</strong>:<br />
+<p><strong>Example 2</strong>:<br />
 Usual: <code>5 + ((1 + 2) * 4) - 3</code><br />
 Stack: <code>5 1 2 add 4 mul add 3 sub</code></p>
-<p><strong>Result</strong>:</p>
+<p><strong>Result 2</strong>:</p>
 <pre><code class="language-stack-repl">Stack〔  〕 ←  5
 Stack〔 5 〕 ←  1
 Stack〔 5 | 1 〕 ←  2
