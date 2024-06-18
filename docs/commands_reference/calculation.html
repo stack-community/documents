@@ -229,17 +229,16 @@ Stack〔 8 〕 ←  4
 Stack〔 8 | 4 〕 ←  div
 Stack〔 2 〕
 </code></pre>
-<h2 id="rounding-off"><a class="header" href="#rounding-off">Rounding off</a></h2>
-<p>Disision isn't always divisible, It need rounding off.
+<h2 id="modulo"><a class="header" href="#modulo">Modulo</a></h2>
+<p>If we want modulo of division, we can use <code>mod</code> command.
 <strong>Example</strong>:<br />
-Usual: <code>round(22 / 7)</code><br />
-Stack: <code>22 7 div round</code></p>
+Usual: <code>90 % 7 </code><br />
+Stack: <code>90 7 mod</code></p>
 <p><strong>Result</strong>:</p>
-<pre><code class="language-stack-repl">Stack〔  〕 ←  22
-Stack〔 22 〕 ←  7
-Stack〔 22 | 7 〕 ←  div
-Stack〔 3.142857142857143 〕 ←  round
-Stack〔 3 〕
+<pre><code class="language-stack-repl">Stack〔  〕 ←  90
+Stack〔 90 〕 ←  7
+Stack〔 90 | 7 〕 ←  mod
+Stack〔 6 〕
 </code></pre>
 <h2 id="power"><a class="header" href="#power">Power</a></h2>
 <p>Sometimes, we have to powering number. If so case, we can use <code>pow</code> command.</p>
@@ -251,6 +250,18 @@ Stack: <code>2 10 pow</code></p>
 Stack〔 2 〕 ←  10
 Stack〔 2 | 10 〕 ←  pow
 Stack〔 1024 〕
+</code></pre>
+<h2 id="rounding-off"><a class="header" href="#rounding-off">Rounding off</a></h2>
+<p>Disision isn't always divisible, It need rounding off.
+<strong>Example</strong>:<br />
+Usual: <code>round(22 / 7)</code><br />
+Stack: <code>22 7 div round</code></p>
+<p><strong>Result</strong>:</p>
+<pre><code class="language-stack-repl">Stack〔  〕 ←  22
+Stack〔 22 〕 ←  7
+Stack〔 22 | 7 〕 ←  div
+Stack〔 3.142857142857143 〕 ←  round
+Stack〔 3 〕
 </code></pre>
 <h2 id="combining-operations"><a class="header" href="#combining-operations">Combining Operations</a></h2>
 <p>Stack can also handle more complex expressions by maintaining the order of operations through its postfix structure.</p>

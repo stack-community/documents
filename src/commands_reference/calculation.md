@@ -75,19 +75,18 @@ Stack〔 8 | 4 〕 ←  div
 Stack〔 2 〕
 ```
 
-## Rounding off
-Disision isn't always divisible, It need rounding off.
+## Modulo
+If we want modulo of division, we can use `mod` command.
 **Example**:  
-Usual: `round(22 / 7)`  
-Stack: `22 7 div round`
+Usual: `90 % 7 `  
+Stack: `90 7 mod`
 
 **Result**:  
 ```stack-repl
-Stack〔  〕 ←  22
-Stack〔 22 〕 ←  7
-Stack〔 22 | 7 〕 ←  div
-Stack〔 3.142857142857143 〕 ←  round
-Stack〔 3 〕
+Stack〔  〕 ←  90
+Stack〔 90 〕 ←  7
+Stack〔 90 | 7 〕 ←  mod
+Stack〔 6 〕
 ```
 
 ## Power
@@ -105,6 +104,21 @@ Stack〔 2 | 10 〕 ←  pow
 Stack〔 1024 〕
 ```
 
+
+## Rounding off
+Disision isn't always divisible, It need rounding off.
+**Example**:  
+Usual: `round(22 / 7)`  
+Stack: `22 7 div round`
+
+**Result**:  
+```stack-repl
+Stack〔  〕 ←  22
+Stack〔 22 〕 ←  7
+Stack〔 22 | 7 〕 ←  div
+Stack〔 3.142857142857143 〕 ←  round
+Stack〔 3 〕
+```
 
 ## Combining Operations
 
