@@ -6,14 +6,7 @@ It installed Stack develop environments.
 ```bash
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 git clone https://github.com/stack-community/stack-lang.git
-cd stack-lang
-cargo build --release
-cargo install --path .
-cd ..
-git clone https://github.com/stack-community/stack-server.git
-cd stack-server
-cargo build --release
-cargo install --path .
+cargo install --path ./stack-lang
 ```
 
 It's sucessful installation! if you enter `stack` and `stack-server` on the your shell then displayed REPL.
