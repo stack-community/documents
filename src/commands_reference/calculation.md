@@ -11,7 +11,6 @@ RPN is a mathematical notation wherein every operator follows all of its operand
 
 
 ## Addition
-
 In Stack, to add two numbers, you would write the operands first, followed by the operator.
 
 > the "Usual" is based on Python's syntax 
@@ -28,7 +27,6 @@ Stack〔 3 | 4 〕 ←  add
 Stack〔 7 〕
 ```
 ## Subtraction
-
 For subtraction, the Stack format follows the same pattern: operands first, then the operator.
 
 **Example**:  
@@ -44,7 +42,6 @@ Stack〔 5 〕
 ```
 
 ## Multiplication
-
 Multiplication in Stack is handled similarly.
 
 **Example**:  
@@ -60,7 +57,6 @@ Stack〔 30 〕
 ```
 
 ## Division
-
 Division follows the same postfix notation rules.
 
 **Example**:  
