@@ -11,7 +11,7 @@
 - [Grammar](./grammar.md)
     - [String Notation](./grammar/string_notation.md)
     - [List Notation](./grammar/list_notation.md)
-    - [Comment Notation](./grammar/comment_notation.md)
+    - [Command Notation](./grammar/command_notation.md)
     - [Data Types](./grammar/data_types.md)
 - [Distributions List](./distributions_list.md)
     - [Stack Lang](./distributions_list/stack_lang.md)
