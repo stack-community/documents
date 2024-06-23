@@ -7,7 +7,14 @@ In this chapter, Explain control syntax such as `if`, `while` etc of Stack.
 
 **Example**:  
 In this code, judgement which even or odd is 5987.
+```stack-lang
+(Even print) 
+(Odd print)
+5987 2 mod 0 equal if
 ```
+
+**Result**:  
+```stack-repl
 Stack〔  〕 ←  (Even print)
 Stack〔 (Even print) 〕 ←  (Odd print)
 Stack〔 (Even print) | (Odd print) 〕 ←  5987
@@ -19,12 +26,4 @@ Stack〔 (Even print) | (Odd print) | false 〕 ←  if
 Stack〔  〕 ←  Odd
 Stack〔 (Odd) 〕 ←  print
 [Output]: Odd
-```
-
-**Result**:  
-```stack-repl
-Stack〔  〕 ←  3
-Stack〔 3 〕 ←  4
-Stack〔 3 | 4 〕 ←  add
-Stack〔 7 〕
 ```

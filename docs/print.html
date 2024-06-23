@@ -406,7 +406,12 @@ In this chapter, Explain control syntax such as <code>if</code>, <code>while</co
 <h2 id="if"><a class="header" href="#if">If</a></h2>
 <p><strong>Example</strong>:<br />
 In this code, judgement which even or odd is 5987.</p>
-<pre><code>Stack〔  〕 ←  (Even print)
+<pre><code class="language-stack-lang">(Even print) 
+(Odd print)
+5987 2 mod 0 equal if
+</code></pre>
+<p><strong>Result</strong>:</p>
+<pre><code class="language-stack-repl">Stack〔  〕 ←  (Even print)
 Stack〔 (Even print) 〕 ←  (Odd print)
 Stack〔 (Even print) | (Odd print) 〕 ←  5987
 Stack〔 (Even print) | (Odd print) | 5987 〕 ←  2
@@ -417,12 +422,6 @@ Stack〔 (Even print) | (Odd print) | false 〕 ←  if
 Stack〔  〕 ←  Odd
 Stack〔 (Odd) 〕 ←  print
 [Output]: Odd
-</code></pre>
-<p><strong>Result</strong>:</p>
-<pre><code class="language-stack-repl">Stack〔  〕 ←  3
-Stack〔 3 〕 ←  4
-Stack〔 3 | 4 〕 ←  add
-Stack〔 7 〕
 </code></pre>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="string"><a class="header" href="#string">String</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="list"><a class="header" href="#list">List</a></h1>
