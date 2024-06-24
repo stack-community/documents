@@ -404,13 +404,13 @@ Stack〔 14 〕
 <p>Any programming language needs control syntax.
 In this chapter, Explain control syntax such as <code>if</code>, <code>while</code> etc of Stack.</p>
 <h2 id="if"><a class="header" href="#if">If</a></h2>
-<p><strong>Example</strong>:<br />
+<p><strong>Example 1</strong>:<br />
 In this code, judgement which even or odd is 5987.</p>
 <pre><code class="language-stack-lang">(Even print) 
 (Odd print)
 5987 2 mod 0 equal if
 </code></pre>
-<p><strong>Result</strong>:</p>
+<p><strong>Result 1</strong>:</p>
 <pre><code class="language-stack-repl">Stack〔  〕 ←  (Even print)
 Stack〔 (Even print) 〕 ←  (Odd print)
 Stack〔 (Even print) | (Odd print) 〕 ←  5987
@@ -422,6 +422,25 @@ Stack〔 (Even print) | (Odd print) | false 〕 ←  if
 Stack〔  〕 ←  Odd
 Stack〔 (Odd) 〕 ←  print
 [Output]: Odd
+</code></pre>
+<p><strong>Example 2</strong>:<br />
+It needs otherwise, judgement which even or odd is 8762.</p>
+<pre><code class="language-stack-lang">(Even print) 
+(Odd print)
+8762 2 mod 0 equal if
+</code></pre>
+<p><strong>Result 2</strong>:</p>
+<pre><code class="language-stack-repl">Stack〔  〕 ←  (Even print)
+Stack〔 (Even print) 〕 ←  (Odd print)
+Stack〔 (Even print) | (Odd print) 〕 ←  8762
+Stack〔 (Even print) | (Odd print) | 8762 〕 ←  2
+Stack〔 (Even print) | (Odd print) | 8762 | 2 〕 ←  mod
+Stack〔 (Even print) | (Odd print) | 0 〕 ←  0
+Stack〔 (Even print) | (Odd print) | 0 | 0 〕 ←  equal
+Stack〔 (Even print) | (Odd print) | true 〕 ←  if
+Stack〔  〕 ←  Even
+Stack〔 (Even) 〕 ←  print
+[Output]: Even
 </code></pre>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="string"><a class="header" href="#string">String</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="list"><a class="header" href="#list">List</a></h1>
