@@ -412,6 +412,7 @@ Stack〔 14 〕
 <p>Any programming language needs control syntax.
 In this chapter, Explain control syntax such as <code>if</code>, <code>while</code> etc of Stack.</p>
 <h2 id="if"><a class="header" href="#if">If</a></h2>
+<p>If is important way to branch program execution.</p>
 <p><strong>Example 1</strong>:<br />
 In this code, judgement which even or odd is 5987.</p>
 <pre><code class="language-stack-lang">(Even print) 
@@ -449,6 +450,50 @@ Stack〔 (Even print) | (Odd print) | true 〕 ←  if
 Stack〔  〕 ←  Even
 Stack〔 (Even) 〕 ←  print
 [Output]: Even
+</code></pre>
+<h2 id="while"><a class="header" href="#while">While</a></h2>
+<p>While is usual way to loop program.</p>
+<p><strong>Example</strong>:</p>
+<pre><code class="language-stack-lang">1 (i) var 
+(
+    i println
+    i 1 add (i) var
+) (i 2 less) while
+(Finished) println
+</code></pre>
+<p><strong>Result</strong>:</p>
+<pre><code class="language-stack-repl">Stack〔  〕 ←  1
+Stack〔 1 〕 ←  (i)
+Stack〔 1 | (i) 〕 ←  var
+Variables {
+ i: 1
+}
+Stack〔  〕 ←  ( i println i 1 add (i) var )
+Stack〔 ( i println i 1 add (i) var ) 〕 ←  (i 2 less)
+Stack〔 ( i println i 1 add (i) var ) | (i 2 less) 〕 ←  while
+Stack〔  〕 ←  i
+Stack〔 1 〕 ←  2
+Stack〔 1 | 2 〕 ←  less
+Stack〔 true 〕
+Stack〔  〕 ←  i
+Stack〔 1 〕 ←  println
+[Output]: 1
+Stack〔  〕 ←  i
+Stack〔 1 〕 ←  1
+Stack〔 1 | 1 〕 ←  add
+Stack〔 2 〕 ←  (i)
+Stack〔 2 | (i) 〕 ←  var
+Variables {
+ i: 2
+}
+Stack〔  〕
+Stack〔  〕 ←  i
+Stack〔 2 〕 ←  2
+Stack〔 2 | 2 〕 ←  less
+Stack〔 false 〕
+Stack〔  〕 ←  (Finished)
+Stack〔 (Finished) 〕 ←  println
+[Output]: Finished
 </code></pre>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="string"><a class="header" href="#string">String</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="list"><a class="header" href="#list">List</a></h1>
