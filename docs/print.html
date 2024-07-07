@@ -408,6 +408,49 @@ Stack〔 17 | 3 〕 ←  sub
 Stack〔 14 〕
 </code></pre>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="inputoutput"><a class="header" href="#inputoutput">Input/Output</a></h1>
+<p>I/O is nessesaly thing in any applications.
+In this chapter, Let you know how to use I/O in Stack.</p>
+<h2 id="print"><a class="header" href="#print">Print</a></h2>
+<p>print is common thing in standard outputs.</p>
+<p><strong>Example</strong>:<br />
+In this code, print the "Hello, world!" message.</p>
+<pre><code class="language-stack-lang">(Hello, world!) print
+</code></pre>
+<p><strong>Result</strong>:</p>
+<pre><code class="language-stack-repl">Stack〔  〕 ←  (Hello, world!)
+Stack〔 (Hello, world!) 〕 ←  print
+[Output]: Hello, world!
+</code></pre>
+<h2 id="println"><a class="header" href="#println">PrintLn</a></h2>
+<p>println is like print.
+differnnt point is just with line feed.
+<strong>Example</strong>:<br />
+In this code, print the "Hello, world!" message.</p>
+<pre><code class="language-stack-lang">(Hello, world!) println
+</code></pre>
+<p><strong>Result</strong>:</p>
+<pre><code class="language-stack-repl">Stack〔  〕 ←  (Hello, world!)
+Stack〔 (Hello, world!) 〕 ←  println
+[Output]: Hello, world!
+</code></pre>
+<h2 id="input"><a class="header" href="#input">Input</a></h2>
+<p>input is enter from user keyboard.
+<strong>Example</strong>:<br />
+In this code, Ask user name.</p>
+<pre><code class="language-stack-lang">(your name: ) input 
+(Welcome, ) swap concat println
+</code></pre>
+<p><strong>Result</strong>:</p>
+<pre><code class="language-stack-repl">Stack〔  〕 ←  (Hello, world!)
+Stack〔  〕 ←  (your name: )
+Stack〔 (your name: ) 〕 ←  input
+your name: StackStick
+Stack〔 (StackStick) 〕 ←  (Welcome, )
+Stack〔 (StackStick) | (Welcome, ) 〕 ←  swap
+Stack〔 (Welcome, ) | (StackStick) 〕 ←  concat
+Stack〔 (Welcome, StackStick) 〕 ←  println
+[Output]: Welcome, StackStick
+</code></pre>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="control"><a class="header" href="#control">Control</a></h1>
 <p>Any programming language needs control syntax.
 In this chapter, Explain control syntax such as <code>if</code>, <code>while</code> etc of Stack.</p>
