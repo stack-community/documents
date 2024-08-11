@@ -9,17 +9,39 @@ This command is to get list value of specified index.
 **Example**:
 In this code, print the "Hello, world!" message.
 ```stack-lang
-[1 2 3] 1 get
+[(a) (b) (c)] 1 get
 ```
 
 **Result**:
 ```stack-repl
-Stack〔  〕 ←  [1 2 3]
-Stack〔  〕 ←  1
-Stack〔 1 〕 ←  2
-Stack〔 1 | 2 〕 ←  3
-Stack〔 1 | 2 | 3 〕
-Stack〔 [1 2 3] 〕 ←  1
-Stack〔 [1 2 3] | 1 〕 ←  get
-Stack〔 2 〕
+Stack〔  〕 ←  [(a) (b) (c)]
+Stack〔  〕 ←  (a)
+Stack〔 (a) 〕 ←  (b)
+Stack〔 (a) | (b) 〕 ←  (c)
+Stack〔 (a) | (b) | (c) 〕
+Stack〔 [(a) (b) (c)] 〕 ←  1
+Stack〔 [(a) (b) (c)] | 1 〕 ←  get
+Stack〔 (b) 〕
+```
+
+## Set
+This command is to sex list value of specified index.
+
+**Example**:
+In this code, print the "Hello, world!" message.
+```stack-lang
+[(a) (b) (c)] 1 (B) set
+```
+
+**Result**:
+```stack-repl
+Stack〔  〕 ←  [(a) (b) (c)]
+Stack〔  〕 ←  (a)
+Stack〔 (a) 〕 ←  (b)
+Stack〔 (a) | (b) 〕 ←  (c)
+Stack〔 (a) | (b) | (c) 〕
+Stack〔 [(a) (b) (c)] 〕 ←  1
+Stack〔 [(a) (b) (c)] | 1 〕 ←  (B)
+Stack〔 [(a) (b) (c)] | 1 | (B) 〕 ←  set
+Stack〔 [(a) (B) (c)] 〕
 ```

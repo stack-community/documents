@@ -180,17 +180,34 @@ In this chapter, Let you know how to processing list in Stack.</p>
 <p>This command is to get list value of specified index.</p>
 <p><strong>Example</strong>:
 In this code, print the "Hello, world!" message.</p>
-<pre><code class="language-stack-lang">[1 2 3] 1 get
+<pre><code class="language-stack-lang">[(a) (b) (c)] 1 get
 </code></pre>
 <p><strong>Result</strong>:</p>
-<pre><code class="language-stack-repl">Stack〔  〕 ←  [1 2 3]
-Stack〔  〕 ←  1
-Stack〔 1 〕 ←  2
-Stack〔 1 | 2 〕 ←  3
-Stack〔 1 | 2 | 3 〕
-Stack〔 [1 2 3] 〕 ←  1
-Stack〔 [1 2 3] | 1 〕 ←  get
-Stack〔 2 〕
+<pre><code class="language-stack-repl">Stack〔  〕 ←  [(a) (b) (c)]
+Stack〔  〕 ←  (a)
+Stack〔 (a) 〕 ←  (b)
+Stack〔 (a) | (b) 〕 ←  (c)
+Stack〔 (a) | (b) | (c) 〕
+Stack〔 [(a) (b) (c)] 〕 ←  1
+Stack〔 [(a) (b) (c)] | 1 〕 ←  get
+Stack〔 (b) 〕
+</code></pre>
+<h2 id="set"><a class="header" href="#set">Set</a></h2>
+<p>This command is to sex list value of specified index.</p>
+<p><strong>Example</strong>:
+In this code, print the "Hello, world!" message.</p>
+<pre><code class="language-stack-lang">[(a) (b) (c)] 1 (B) set
+</code></pre>
+<p><strong>Result</strong>:</p>
+<pre><code class="language-stack-repl">Stack〔  〕 ←  [(a) (b) (c)]
+Stack〔  〕 ←  (a)
+Stack〔 (a) 〕 ←  (b)
+Stack〔 (a) | (b) 〕 ←  (c)
+Stack〔 (a) | (b) | (c) 〕
+Stack〔 [(a) (b) (c)] 〕 ←  1
+Stack〔 [(a) (b) (c)] | 1 〕 ←  (B)
+Stack〔 [(a) (b) (c)] | 1 | (B) 〕 ←  set
+Stack〔 [(a) (B) (c)] 〕
 </code></pre>
 
                     </main>
