@@ -174,6 +174,24 @@
                 <div id="content" class="content">
                     <main>
                         <h1 id="list"><a class="header" href="#list">List</a></h1>
+<p>List is way to use plural value together.
+In this chapter, Let you know how to processing list in Stack.</p>
+<h2 id="get"><a class="header" href="#get">Get</a></h2>
+<p>This command is to get list value of specified index.</p>
+<p><strong>Example</strong>:
+In this code, print the "Hello, world!" message.</p>
+<pre><code class="language-stack-lang">[1 2 3] 1 get
+</code></pre>
+<p><strong>Result</strong>:</p>
+<pre><code class="language-stack-repl">Stack〔  〕 ←  [1 2 3]
+Stack〔  〕 ←  1
+Stack〔 1 〕 ←  2
+Stack〔 1 | 2 〕 ←  3
+Stack〔 1 | 2 | 3 〕
+Stack〔 [1 2 3] 〕 ←  1
+Stack〔 [1 2 3] | 1 〕 ←  get
+Stack〔 2 〕
+</code></pre>
 
                     </main>
 
